@@ -35,6 +35,8 @@ After 10 seconds it reports the result.
 | Opera 37.0.2178.32 | 100.02 |
 | Safari 9.1.1 |103.06|
 
+It's interesting to note that the time between callbacks on node 4+ is roughly double the length of the callback. While in node 0.12 and 0.10 it's roughly equal to the length of the callback.
+
 # Results (setFixedInterval)
 
 I tried [fixed-setinterval](https://github.com/lfsmoura/fixed-timeout) by [Leo Moura](https://github.com/lfsmoura) to see if I can get more consistent results.
