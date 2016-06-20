@@ -55,7 +55,7 @@ open set-fixed-interval.html
 | Opera 38.0.2220.31 | 100.03 |
 | Safari 9.1.1 |103.21|
 
-# Results (setFixedInterval)
+# Results (game-loop)
 
 I found another attempt at a consistent interval by [Alex Bennett](https://github.com/timetocode/node-game-loop). For the browser version I had to replace setImmediate with a 0ms setTimeout as most browsers, at the time of writing, don't support setImmediate.
 
