@@ -34,3 +34,15 @@ After 10 seconds it reports the result.
 | Opera 38.0.2220.31 | 100.03 |
 | Opera 37.0.2178.32 | 100.02 |
 | Safari 9.1.1 |103.06|
+
+# Results (setFixedInterval)
+
+I tried [fixed-setinterval](https://github.com/lfsmoura/fixed-timeout) by [Leo Moura](https://github.com/lfsmoura) to see if I can get more consistent results.
+
+| Implementation | Result |
+| -------------- | ------:|
+| node 6.2.1 | 99.97979797979798 |
+| Chrome 51.0.2704.84 |100.01|
+| Firefox 47.0 |101.07|
+| Opera 38.0.2220.31 | 100.03 |
+| Safari 9.1.1 |103.21|
