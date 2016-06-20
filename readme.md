@@ -41,6 +41,12 @@ It's interesting to note that the time between callbacks on node 4+ is roughly d
 
 I tried [fixed-setinterval](https://github.com/lfsmoura/fixed-timeout) by [Leo Moura](https://github.com/lfsmoura) to see if I can get more consistent results.
 
+~~~shell
+node set-fixed-interval.js
+
+open set-fixed-interval.html
+~~~
+
 | Implementation | Result |
 | -------------- | ------:|
 | node 6.2.1 | 99.98 |
@@ -48,3 +54,21 @@ I tried [fixed-setinterval](https://github.com/lfsmoura/fixed-timeout) by [Leo M
 | Firefox 47.0 |101.07|
 | Opera 38.0.2220.31 | 100.03 |
 | Safari 9.1.1 |103.21|
+
+# Results (setFixedInterval)
+
+I found another attempt at a consistent interval by [Alex Bennett](https://github.com/timetocode/node-game-loop). For the browser version I had to replace setImmediate with a 0ms setTimeout as most browsers, at the time of writing, don't support setImmediate.
+
+~~~shell
+node game-loop.js
+
+open game-loop.html
+~~~
+
+| Implementation | Result |
+| -------------- | ------:|
+| node 6.2.1 | 100.43 |
+| Chrome 51.0.2704.84 |101.93|
+| Firefox 47.0 |102.11|
+| Opera 38.0.2220.31 | 102.04 |
+| Safari 9.1.1 |101.77|
