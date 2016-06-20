@@ -13,32 +13,32 @@ function fib(n) {
 }
 
 function doHardWorkFor (cycles) {
-  const start = new Date().getTime();
+  var start = new Date().getTime();
 
   fib(cycles);
 }
 
 function sum (set) {
-  return set.reduce((t, n) => t + n, 0);
+  return set.reduce(function (t, n) { return t + n; }, 0);
 }
 
 function average (set) {
   return sum(set) / set.length;
 }
 
-let samples = [];
-const Interval = 100;
+var samples = [];
+var Interval = 100;
 
-let id = setInterval(() => {
+var id = setInterval(function () {
   samples.push(new Date().getTime());
   doHardWorkFor(2000000);
 }, Interval);
 
-setTimeout(() => {
+setTimeout(function () {
   clearInterval(id);
 
-  let diff = [];
-  for(let i = 0; i < samples.length; i += 1) {
+  var diff = [];
+  for(var i = 0; i < samples.length; i += 1) {
     if (i === 0) {
       continue;
     }
