@@ -33,4 +33,4 @@ After 10 seconds it reports the result.
 | Firefox 43.0.4 |99.97|
 | Opera 38.0.2220.31 | 100.03 |
 | Opera 37.0.2178.32 | 100.02 |
-| Safari 9.1.1 |103.0625|
+| Safari 9.1.1 |103.06|
