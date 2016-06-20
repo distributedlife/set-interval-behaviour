@@ -41,7 +41,7 @@ I tried [fixed-setinterval](https://github.com/lfsmoura/fixed-timeout) by [Leo M
 
 | Implementation | Result |
 | -------------- | ------:|
-| node 6.2.1 | 99.97979797979798 |
+| node 6.2.1 | 99.98 |
 | Chrome 51.0.2704.84 |100.01|
 | Firefox 47.0 |101.07|
 | Opera 38.0.2220.31 | 100.03 |
